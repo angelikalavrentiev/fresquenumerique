@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap");
+body {
+  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 1em;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+}
+header .lep {
+  font-size: 1.1em;
+  text-decoration: overline;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.3em;
+  font-weight: bold;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header div p {
+  margin: 0 auto;
+  font-size: 0.8em;
+  color: #236bf3;
+  margin-right: 0.3em;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1900px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .burgermenu .burger {
+    display: none;
+  }
+  .burgermenu .navmenu {
+    display: block;
+  }
+}
+.burgermenu .menu {
+  list-style: none;
+}
+.burgermenu nav {
+  display: none;
+}
+.burgermenu .croix {
+  display: none;
+}
+.burgermenu input {
+  display: none;
+}
+.burgermenu input:checked ~ nav {
+  display: block;
+}
+.burgermenu input:checked ~ .burger {
+  display: none;
+}
+.burgermenu input:checked ~ .croix {
+  display: block;
+}
+
+.imgpresentation {
+  background-image: url(../fresquenumerique/images/photogroupe.jpg);
+  background-size: 700px;
+  background-position: center;
+  margin-top: 0.1em;
+}
+.imgpresentation .pressous {
+  padding: 4em;
+  background-color: rgba(7, 10, 73, 0.51);
+  text-align: center;
+  color: #ffffff;
+}
+
+.section {
+  margin: 1em;
+}
+.section p {
+  text-align: justify;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+  color: #09771e;
+}
+
+.intro {
+  text-align: center;
+}
+.intro h3 {
+  font-size: x-large;
+  color: #09771e;
+}
+.intro p {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1900px) {
+  .imagescartes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .imagescartes img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+  }
+  .imagescartes figure {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .imagescartes .legends_image {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .imgutil {
+    border-radius: 1em;
+    width: 100%;
+  }
+  .imgquadri {
+    text-align: center;
+  }
+  .imgquadri img {
+    border-radius: 1em;
+    width: 60%;
+  }
+}
+.gallerie {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.gallerie img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1900px) {
+  .gallerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .gallerie img:nth-child(3) {
+    grid-area: 2/1/3/3;
+  }
+}
+footer {
+  background-color: #030329;
+  text-align: center;
+  color: white;
+  padding-bottom: 0.2em;
+  padding-top: 0.1em;
+}
+
+/*# sourceMappingURL=style.css.map */
